@@ -3,13 +3,14 @@
 
 # LOCATE PROJECT ROOT
 
-DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ANDROID_MODULE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 
 # SOURCES
 
 source "src/logger.sh"
-source "$DIR/apps/_all.sh"
+source "$ANDROID_MODULE_ROOT/apps/_all.sh"
+source "$ANDROID_MODULE_ROOT/conf.sh"
 
 
 # HELPERS
@@ -26,7 +27,7 @@ log_footer () {
 # INTERFACE
 
 provision () {
-  provision_all_android_apps
+  ensure_all_android_apps_are_provisioned 
 }
 
 
