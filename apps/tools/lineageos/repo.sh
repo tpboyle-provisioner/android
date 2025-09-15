@@ -4,7 +4,7 @@
 # CONFIG
 
 REPO_URL="https://storage.googleapis.com/git-repo-downloads/repo"
-REPO_DIR="$HOME/bin"
+REPO_DIR="/home/$USER/bin"
 REPO_PATH="$REPO_DIR/repo"
 
 
@@ -25,6 +25,7 @@ repo_is_installed () {
 }
 
 install_repo () {
+  mkdir -p "$REPO_DIR"
   curl "$REPO_URL" > "$REPO_PATH"
   chmod a+x "$REPO_PATH"
 }

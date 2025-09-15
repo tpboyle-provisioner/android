@@ -7,11 +7,8 @@ source "src/packages/dpkg.sh"
 
 # CONFIG
 
-LIBTINFO_VERSION="6.3-2"
-LIBNCURSES_VERSION="6.3-2"
-
-LIBTINFO_URL="https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_$LIBTINFO_VERSION_amd64.deb"
-LIBNCURSES_URL="https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_$LIBNCURSES_VERSION_amd64.deb"
+LIBTINFO_URL="https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2_amd64.deb"
+LIBNCURSES_URL="https://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.3-2_amd64.deb"
 
 
 # INTERFACE
