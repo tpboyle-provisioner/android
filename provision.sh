@@ -10,7 +10,6 @@ ANDROID_MODULE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source "src/logger.sh"
 source "$ANDROID_MODULE_ROOT/apps/_all.sh"
-source "$ANDROID_MODULE_ROOT/conf.sh"
 
 
 # HELPERS

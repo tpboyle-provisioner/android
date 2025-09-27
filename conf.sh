@@ -1,6 +1,0 @@
-
-# CONFIG
-
-ENABLE_CCACHE=1              # false
-CCACHE_SIZE="50G"
-DOWNLOAD_SOURCE_DIRECTORY=1  # false
